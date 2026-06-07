@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>好运抽奖</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="lottery-stage" aria-label="微信抽奖活动">
+        <div class="brand-row">
+          <span class="brand-mark">福</span>
+          <span>微信福利社</span>
+        </div>
+
+        <header class="campaign-header">
+          <p class="eyebrow">限时福利</p>
+          <h1 id="pageTitle">好运转盘抽奖</h1>
+          <p class="campaign-copy">点击转盘中心开启好运，中奖结果由后台实时派发。</p>
+        </header>
+
+        <div class="stats-bar">
+          <div>
+            <span class="stat-label">今日剩余</span>
+            <strong id="chanceCount">3</strong>
+          </div>
+          <div>
+            <span class="stat-label">参与人数</span>
+            <strong id="participantCount">12,860</strong>
+          </div>
+          <div>
+            <span class="stat-label">中奖率</span>
+            <strong id="winRateText">100%</strong>
+          </div>
+        </div>
+
+        <div class="wheel-wrap">
+          <canvas id="wheelCanvas" width="640" height="640" aria-hidden="true"></canvas>
+          <div class="pointer" aria-hidden="true"></div>
+          <button id="spinButton" class="spin-button" type="button">
+            <span>开始</span>
+            <small>抽奖</small>
+          </button>
+        </div>
+
+        <div class="quick-actions">
+          <button id="shareButton" class="ghost-button" type="button">分享活动</button>
+          <button id="rulesButton" class="ghost-button" type="button">活动规则</button>
+        </div>
+      </section>
+
+      <section class="panel prize-panel" aria-label="奖品列表">
+        <div class="section-title">
+          <h2>奖品池</h2>
+          <span>后台实时配置</span>
+        </div>
+        <ul id="prizeList" class="prize-list"></ul>
+      </section>
+
+      <section class="panel record-panel" aria-label="中奖记录">
+        <div class="section-title">
+          <h2>中奖记录</h2>
+          <span>最近 5 条</span>
+        </div>
+        <ul id="recordList" class="record-list"></ul>
+      </section>
+    </main>
+
+    <div id="resultModal" class="modal" hidden>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+        <button id="closeModal" class="icon-close" type="button" aria-label="关闭">×</button>
+        <div class="result-badge" id="resultIcon">奖</div>
+        <p class="modal-kicker">恭喜获得</p>
+        <h2 id="resultTitle">奖品名称</h2>
+        <p id="resultDesc">请按页面提示领取奖励。</p>
+        <button id="confirmButton" class="primary-button" type="button">开心收下</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

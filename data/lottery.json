@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "title": "玥玥的今日惊喜",
+    "dailyChances": 3,
+    "participantCount": 1,
+    "winRateText": "100%"
+  },
+  "prizes": [
+    {
+      "id": "p1780841854659",
+      "name": "一个包子",
+      "desc": "请填写奖品说明",
+      "tag": "奖品",
+      "color": "#f59e0b",
+      "weight": 20,
+      "stock": 10,
+      "enabled": true
+    },
+    {
+      "id": "p1780841868777",
+      "name": "一个亲亲",
+      "desc": "请填写奖品说明",
+      "tag": "奖品",
+      "color": "#f59e0b",
+      "weight": 20,
+      "stock": 10,
+      "enabled": true
+    },
+    {
+      "id": "p1780841875975",
+      "name": "一个抱抱",
+      "desc": "请填写奖品说明",
+      "tag": "奖品",
+      "color": "#f59e0b",
+      "weight": 20,
+      "stock": 10,
+      "enabled": true
+    },
+    {
+      "id": "p1780841883917",
+      "name": "一脚踹倒",
+      "desc": "请填写奖品说明",
+      "tag": "奖品",
+      "color": "#f59e0b",
+      "weight": 20,
+      "stock": 10,
+      "enabled": true
+    },
+    {
+      "id": "p1780841914505",
+      "name": "一杯奶茶",
+      "desc": "请填写奖品说明",
+      "tag": "奖品",
+      "color": "#f59e0b",
+      "weight": 20,
+      "stock": 10,
+      "enabled": true
+    }
+  ],
+  "records": [
+    {
+      "id": "r1",
+      "user": "陈*玲",
+      "prizeId": "p2",
+      "prizeName": "8.8 元红包",
+      "createdAt": "2026-06-07T10:10:00.000Z"
+    },
+    {
+      "id": "r2",
+      "user": "李*明",
+      "prizeId": "p4",
+      "prizeName": "奶茶兑换券",
+      "createdAt": "2026-06-07T10:08:00.000Z"
+    },
+    {
+      "id": "r3",
+      "user": "周*南",
+      "prizeId": "p3",
+      "prizeName": "会员月卡",
+      "createdAt": "2026-06-07T10:06:00.000Z"
+    }
+  ],
+  "userChances": {}
+}
