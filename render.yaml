@@ -8,6 +8,6 @@ services:
       - key: DATA_DIR
         value: /data
     disk:
-      - name: lottery-data
-        mountPath: /data
-        sizeGB: 1
+      name: lottery-data
+      mountPath: /data
+      sizeGB: 1
