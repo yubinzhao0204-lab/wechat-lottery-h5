@@ -2,12 +2,5 @@ services:
   - type: web
     name: wechat-lottery-h5
     runtime: node
-    plan: starter
+    plan: free
     startCommand: npm start
-    envVars:
-      - key: DATA_DIR
-        value: /data
-    disk:
-      name: lottery-data
-      mountPath: /data
-      sizeGB: 1
